@@ -22,4 +22,8 @@ return (List<Model>) repository.findAll();
 //        return question;
     }
 
+    public Model create_model(Model model) {
+        return repository.save(model);
+
+    }
 }
