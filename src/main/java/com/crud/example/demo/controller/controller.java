@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class controller {
 
@@ -20,7 +22,7 @@ public class controller {
     }
 
 @GetMapping("/mappingTest")
-    public  Model Test(){
+    public List<Model> Test(){
 
 //         Model question = new Model(1,"Sample_question","Quest_Desc","Answer");
 //    ques.Single_creation();
