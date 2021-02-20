@@ -26,4 +26,17 @@ return (List<Model>) repository.findAll();
         return repository.save(model);
 
     }
+
+    public String delete_model(Integer id) {
+        repository.deleteById(id);
+        return "Deleted Successfully";
+    }
+    public String delete_all_model() {
+        repository.deleteAll();
+        return "Deleted All Successfully";
+    }
+
+    public Model update_model(Model model) {
+       return repository.save(model);
+    }
 }
